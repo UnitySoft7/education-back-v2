@@ -1,0 +1,9 @@
+server:
+  port: 9810
+spring:
+  application:
+    name: schedule
+  data:
+    mongodb:
+#      uri:mongodb://localhost:27017/EDUCATION_SCHEDULE
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22

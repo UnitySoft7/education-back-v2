@@ -1,0 +1,11 @@
+server:
+  port: 9912
+
+spring:
+  application:
+    name: evaluate
+  data:
+    mongodb:
+#      uri:mongodb://localhost:27017/EDUCA
+
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22 #school_evaluate

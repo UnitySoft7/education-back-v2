@@ -1,0 +1,11 @@
+server:
+  port: 9837
+spring:
+  application:
+    name: press
+  data:
+    mongodb:
+#      uri = 'mongodb://localhost:27017/EDUCATION_PRESS
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22 #school_press
+#       uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22
+#uri£: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22

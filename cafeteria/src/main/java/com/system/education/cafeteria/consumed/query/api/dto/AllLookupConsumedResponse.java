@@ -1,0 +1,11 @@
+package com.system.education.cafeteria.consumed.query.api.dto;
+
+import com.system.education.cafeteria.consumed.query.api.response.ConsumedResponse;
+import io.swagger.v3.oas.annotations.media.Schema;
+
+import java.io.Serializable;
+import java.util.List;
+
+@Schema(name = "All lookup consumed response")
+public record AllLookupConsumedResponse(
+        boolean success, List<ConsumedResponse> consumedResponses) implements Serializable {}

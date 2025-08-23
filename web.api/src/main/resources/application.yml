@@ -1,0 +1,386 @@
+server:
+  port: 9900
+
+
+
+management:
+  endpoint.gateway.enabled: true
+  endpoints.web.exposure.include: gateway
+
+
+spring:
+  application:
+    name: WEB API-GATEWAY
+
+  cloud:
+    gateway:
+
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+
+      routes:
+
+#        #        -------------------ADDRESS -------------------
+#        - id: web-api-v1-education-address
+#          uri: https://address-gu1f.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/address/**
+#
+#        #        -------------------ESTABLISHMENT -------------------
+#        - id: web-api-v1-education-establishment
+#          uri: https://establishment-avdx.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment/**
+#
+#        #        -------------------ESTABLISHMENT-SECTION -------------------
+#        - id: web-api-v1-education-establishment-section
+#          uri: https://establishment-section-nbd1.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment-section/**
+#
+#        #        -------------------ESTABLISHMENT-SECTION-CLASS -------------------
+#        - id: web-api-v1-education-establishment-section-class
+#          uri: https://establishment-section-class-s2sm.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment-section-class/**
+#
+#        #        -------------------ESTABLISHMENT-SECTION-CLASS-COURSE -------------------
+#        - id: web-api-v1-education-establishment-section-class-course
+#          uri: https://establishment-section-class-course-eafv.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment-section-class-course/**
+#
+#        #        -------------------ESTABLISHMENT-SECTION-CLASS-COURSE-TEACHER -------------------
+#        - id: web-api-v1-education-establishment-section-class-course-teacher
+#          uri: https://establishment-section-class-course-41np.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment-section-class-course-teacher/**
+#
+#        #        -------------------ESTABLISHMENT-SECTION-CLASS-STUDENT -------------------
+#        - id: web-api-v1-education-establishment-section-class-student
+#          uri: https://establishment-section-class-student-o8lf.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment-section-class-student/**
+#
+#        #        -------------------ESTABLISHMENT-TEACHER -------------------
+#        - id: web-api-v1-education-establishment-teacher
+#          uri: https://establishment-teacher-d3s0.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/establishment-teacher/**
+#
+#        #        -------------------PARENT -------------------
+#        - id: web-api-v1-education-parent
+#          uri: https://parent-c0sv.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/parent/**
+#
+#        #        -------------------STUDENT -------------------
+#        - id: web-api-v1-education-student
+#          uri: https://student-aeu3.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/student/**
+#
+#        #        -------------------TEACHER -------------------
+#        - id: web-api-v1-education-teacher
+#          uri: https://teacher-j53m.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/teacher/**
+#
+#        #        -------------------FLO -------------------
+#
+#        #        -------------------SECTION -------------------
+#        - id: web-api-v1-education-section
+#          uri: https://section-me68.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/section/**
+#
+#        #        -------------------CLASSROOM -------------------
+#        - id: web-api-v1-education-classroom
+#          uri: https://classroom-opk1.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/classroom/**
+#
+#        #        -------------------RULES -------------------
+#        - id: web-api-v1-education-rules
+#          uri: https://rules-yi3x.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/rules/**
+#
+#        #        -------------------CONDUITE -------------------
+#        - id: web-api-v1-education-conduite
+#          uri: https://conduite.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/conduite/**
+#
+#        #        -------------------CONDUITE-DETAIL -------------------
+#        - id: web-api-v1-education-conduiteDetails
+#          uri: https://conduite-detail.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/conduiteDetails/**
+#
+#        #        -------------------COURSE -------------------
+#        - id: web-api-v1-education-course
+#          uri: https://course-4tm1.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/course/**
+#
+#        #        -------------------EVALUATE -------------------
+#        - id: web-api-v1-education-evaluate
+#          uri: https://evaluate-mqml.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/evaluate/**
+#
+#        #        -------------------EVALUATION -------------------
+#        - id: web-api-v1-education-evaluation
+#          uri: https://evaluation-hh4m.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/evaluation/**
+#
+#        #        -------------------EXAM -------------------
+#        - id: web-api-v1-education-exam
+#          uri: https://exam-f0vg.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/exam/**
+#
+#        #        -------------------EXAMINATION -------------------
+#        - id: web-api-v1-education-examination
+#          uri: https://examination-1rqt.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/examination/**
+#
+#        #        -------------------MINOS -------------------
+#        - id: web-api-v1-education-minos
+#          uri: https://minos-gg7w.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/minos/**
+#
+#        #        -------------------SCHEDULE -------------------
+#        - id: web-api-v1-education-schedule
+#          uri: https://schedule-us7k.onrender.com/**
+#          predicates:
+#            - Path=/api/v1/education/schedule/**
+
+
+
+
+
+#
+        #        -------------------AUTHENTIFICATION -------------------
+        - id: web-api-v1-education-auth
+          uri: http://127.0.0.1:9901/**
+          predicates:
+            - Path=/api/v1/education/auth/**
+
+        - id: web-api-v1-education-role
+          uri: http://127.0.0.1:9901/**
+          predicates:
+            - Path=/api/v1/education/role/**
+
+        - id: web-api-v1-education-user-account
+          uri: http://127.0.0.1:9901/**
+          predicates:
+            - Path=/api/v1/education/user-account/**
+
+        #        -------------------ESTABLISHMENT -------------------
+        - id: web-api-v1-education-establishment
+          uri: http://127.0.0.1:9902/**
+          predicates:
+            - Path=/api/v1/education/establishment/**
+
+        #        -------------------SECTION -------------------
+        - id: web-api-v1-education-section
+          uri: http://127.0.0.1:9903/**
+          predicates:
+            - Path=/api/v1/education/section/**
+
+        #        -------------------CLASSROOM -------------------
+        - id: web-api-v1-education-classroom
+          uri: http://127.0.0.1:9904/**
+          predicates:
+            - Path=/api/v1/education/classroom/**
+
+
+        #        -------------------COURSE -------------------
+        - id: web-api-v1-education-course
+          uri: http://127.0.0.1:9905/**
+          predicates:
+            - Path=/api/v1/education/course/**
+
+        #        -------------------CLASS-COURSE -------------------
+        - id: web-api-v1-education-class-course
+          uri: http://127.0.0.1:9906/**
+          predicates:
+            - Path=/api/v1/education/class-course/**
+
+
+        #        -------------------TEACHER -------------------
+        - id: web-api-v1-education-teacher
+          uri: http://127.0.0.1:9907/**
+          predicates:
+            - Path=/api/v1/education/teacher/**
+
+        #        -------------------CLASS-COURSE-TEACHER -------------------
+        - id: web-api-v1-education-course-teacher
+          uri: http://127.0.0.1:9908/**
+          predicates:
+            - Path=/api/v1/education/course-teacher/**
+
+        #        -------------------PARENT -------------------
+        - id: web-api-v1-education-parent
+          uri: http://127.0.0.1:9909/**
+          predicates:
+            - Path=/api/v1/education/parent/**
+
+        #        -------------------STUDENT -------------------
+        - id: web-api-v1-education-student
+          uri: http://127.0.0.1:9910/**
+          predicates:
+            - Path=/api/v1/education/student/**
+
+        #        -------------------EVALUATION -------------------
+        - id: web-api-v1-education-evaluation
+          uri: http://127.0.0.1:9911/**
+          predicates:
+            - Path=/api/v1/education/evaluation/**
+
+        #        -------------------EVALUATE -------------------
+        - id: web-api-v1-education-evaluate
+          uri: http://127.0.0.1:9912/**
+          predicates:
+            - Path=/api/v1/education/evaluate/**
+
+        #        -------------------EXAM -------------------
+        - id: web-api-v1-education-exam
+          uri: http://127.0.0.1:9913/**
+          predicates:
+            - Path=/api/v1/education/exam/**
+
+        #        -------------------EXAMINATION -------------------
+        - id: web-api-v1-education-examination
+          uri: http://127.0.0.1:9914/**
+          predicates:
+            - Path=/api/v1/education/examination/**
+
+
+
+
+
+        #        -------------------ESTABLISHMENT-TEACHER -------------------
+        - id: web-api-v1-education-establishment-teacher
+          uri: http://127.0.0.1:9905/**
+          predicates:
+            - Path=/api/v1/education/establishment-teacher/**
+
+        #        -------------------PARENT -------------------
+        - id: web-api-v1-education-parent
+          uri: http://127.0.0.1:9811/**
+          predicates:
+            - Path=/api/v1/education/parent/**
+
+        #        -------------------TEACHER -------------------
+        - id: web-api-v1-education-teacher
+          uri: http://127.0.0.1:9904/**
+          predicates:
+            - Path=/api/v1/education/teacher/**
+
+        #        -------------------FLO -------------------
+
+        #        -------------------RULES -------------------
+        - id: web-api-v1-education-rules
+          uri: http://127.0.0.1:9809/**
+          predicates:
+            - Path=/api/v1/education/rules/**
+
+        #        -------------------CONDUITE -------------------
+        - id: web-api-v1-education-conduite
+          uri: http://127.0.0.1:9801/**
+          predicates:
+            - Path=/api/v1/education/conduite/**
+
+        #        -------------------CONDUITE-DETAIL -------------------
+        - id: web-api-v1-education-conduiteDetails
+          uri: http://127.0.0.1:9802/**
+          predicates:
+            - Path=/api/v1/education/conduiteDetails/**
+
+        #        -------------------EVALUATE -------------------
+        - id: web-api-v1-education-evaluate
+          uri: http://127.0.0.1:9804/**
+          predicates:
+            - Path=/api/v1/education/evaluate/**
+
+        #        -------------------EVALUATION -------------------
+        - id: web-api-v1-education-evaluation
+          uri: http://127.0.0.1:9805/**
+          predicates:
+            - Path=/api/v1/education/evaluation/**
+
+        #        -------------------EXAM -------------------
+        - id: web-api-v1-education-exam
+          uri: http://127.0.0.1:9806/**
+          predicates:
+            - Path=/api/v1/education/exam/**
+
+        #        -------------------EXAMINATION -------------------
+        - id: web-api-v1-education-examination
+          uri: http://127.0.0.1:9807/**
+          predicates:
+            - Path=/api/v1/education/examination/**
+
+        #        -------------------MINOS -------------------
+        - id: web-api-v1-education-minos
+          uri: http://127.0.0.1:9808/**
+          predicates:
+            - Path=/api/v1/education/minos/**
+
+        #        -------------------SCHEDULE -------------------
+        - id: web-api-v1-education-schedule
+          uri: http://127.0.0.1:9810/**
+          predicates:
+            - Path=/api/v1/education/schedule/**
+
+
+
+
+
+        #        -------------------BED -------------------
+        - id: web-api-v1-education-bed
+          uri: http://127.0.0.1:9840/**
+          predicates:
+            - Path=/api/v1/education/bed/**
+
+        #        -------------------Press -------------------
+        - id: web-api-v1-education-press
+          uri: http://127.0.0.1:9837/**
+          predicates:
+            - Path=/api/v1/education/press/**
+
+        #        -------------------Dormitory -------------------
+        - id: web-api-v1-education-dormitory
+          uri: http://127.0.0.1:9839/**
+          predicates:
+            - Path=/api/v1/education/dormitory/**
+
+        #        -------------------Dormitory-student-bd-press -------------------
+        - id: web-api-v1-education-dormitory-student-bed-press
+          uri: http://127.0.0.1:9841/**
+          predicates:
+            - Path=/api/v1/education/dormitory-student-bed-press/**
+
+        #        -------------------Schedule -------------------
+        - id: web-api-v1-education-schedule
+          uri: http://127.0.0.1:9810/**
+          predicates:
+            - Path=/api/v1/education/schedule/**
+
+        #        -------------------Cafeteria -------------------
+        - id: web-api-v1-education-cafeteria
+          uri: http://127.0.0.1:9915/**
+          predicates:
+            - Path=/api/v1/education/cafeteria/**
+
+        #        -------------------Infirmary -------------------
+        - id: web-api-v1-education-infirmary
+          uri: http://127.0.0.1:9916/**
+          predicates:
+            - Path=/api/v1/education/infirmary/**

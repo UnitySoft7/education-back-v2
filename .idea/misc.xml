@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/cafeteria/pom.xml" />
+        <option value="$PROJECT_DIR$/infirmary/pom.xml" />
+        <option value="$PROJECT_DIR$/student/pom.xml" />
+        <option value="$PROJECT_DIR$/permission/pom.xml" />
+        <option value="$PROJECT_DIR$/establishment/pom.xml" />
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/bulletin/pom.xml" />
+        <option value="$PROJECT_DIR$/skill/pom.xml" />
+        <option value="$PROJECT_DIR$/section/pom.xml" />
+        <option value="$PROJECT_DIR$/classroom/pom.xml" />
+        <option value="$PROJECT_DIR$/class.course/pom.xml" />
+        <option value="$PROJECT_DIR$/course/pom.xml" />
+        <option value="$PROJECT_DIR$/teacher/pom.xml" />
+        <option value="$PROJECT_DIR$/minos/pom.xml" />
+        <option value="$PROJECT_DIR$/auth/pom.xml" />
+        <option value="$PROJECT_DIR$/web.api/pom.xml" />
+        <option value="$PROJECT_DIR$/course.teacher/pom.xml" />
+        <option value="$PROJECT_DIR$/bed/pom.xml" />
+        <option value="$PROJECT_DIR$/dormitory/pom.xml" />
+        <option value="$PROJECT_DIR$/dormitory.student.bed.press/pom.xml" />
+        <option value="$PROJECT_DIR$/press/pom.xml" />
+        <option value="$PROJECT_DIR$/evaluate/pom.xml" />
+        <option value="$PROJECT_DIR$/evaluation/pom.xml" />
+        <option value="$PROJECT_DIR$/exam/pom.xml" />
+        <option value="$PROJECT_DIR$/examination/pom.xml" />
+        <option value="$PROJECT_DIR$/schedule/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

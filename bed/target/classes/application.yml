@@ -1,0 +1,9 @@
+server:
+  port: 9840
+spring:
+  application:
+    name: bed
+  data:
+    mongodb:
+#      uri = 'mongodb://localhost:27017/EDUCATION_BED
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22

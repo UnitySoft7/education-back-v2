@@ -1,0 +1,9 @@
+server:
+  port: 9913
+
+spring:
+  application:
+    name: exam
+  data:
+    mongodb:
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22 #school_exam

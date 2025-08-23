@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="495d1959-023c-4414-b78b-6bf173c7b98f" name="Changes" comment="course correction">
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/BedApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/cmd/api/command/BedCreatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/cmd/api/command/BedUpdatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/cmd/api/controller/CreateBedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/cmd/api/controller/UpdateBedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/common/BedCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/common/LogCreated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/common/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/dto/FieldsValidatorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/dto/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/exception/GlobalWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/exception/response/VerifyExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/model/Bed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/payload/BedPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/payload/impl/BedPayloadImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/core/utils/MessageUtilsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/controller/BedLookupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/dto/AllLookupBedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/dto/LookupBedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/handler/BedEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/handler/BedQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/handler/impl/BedEventHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/handler/impl/BedQueryHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/repository/BedRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/repository/BedRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/repository/impl/BedRepositoriesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/java/com/school/bed/query/api/response/BedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bed/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/PresenceDormitoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/cmd/api/command/FindByCodeAndIndexQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/cmd/api/command/PresenceInDormitoryCreatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/cmd/api/command/PresenceInDormitoryUpdatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/cmd/api/command/PresenceQueryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/cmd/api/controller/CreatePresenceInDormitoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/cmd/api/controller/UpdatePresenceInDormitoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/common/LogCreated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/common/PresenceInDormitoryCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/common/PresenceSta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/common/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/dto/FieldsValidatorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/dto/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/exception/GlobalWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/exception/response/VerifyExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/model/PresenceInDormitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/payload/PresenceInDormitoryPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/payload/impl/PresenceInDormitoryPayloadImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/core/utils/MessageUtilsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/controller/PresenceInDormitoryLookupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/dto/AllLookupPresenceInDormitoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/dto/LookupEstablishmentSectionClassStudentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/dto/LookupPresenceInDormitoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/dto/LookupPresenceStaResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/dto/LookupScheduleIndexResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/handler/PresenceInDormitoryEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/handler/PresenceInDormitoryQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/handler/impl/PresenceInDormitoryEventHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/handler/impl/PresenceInDormitoryQueryHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/query/FindByCodeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/query/FindByTrimesterQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/query/FindByYearQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/repository/PresenceInDormitoryRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/repository/PresenceInDormitoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/repository/impl/PresenceInDormitoryRepositoriesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/response/EstablishmentSectionClassStudentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/response/PresenceInDormitoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/response/PresenceQueryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/response/PresenceStuResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/response/PresenceStudentByESCSResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/java/com/school/presence/dormitory/student/query/api/response/ScheduleIndexResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/PresenceStudentDailyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/cmd/api/command/PresenceStudentDailyCreatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/cmd/api/controller/CreatePresenceStudentDailyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/common/LogCreated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/common/PresenceStudentDailyCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/common/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/dto/FieldsValidatorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/dto/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/exception/GlobalWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/exception/response/VerifyExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/model/PresenceStudentDaily.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/payload/PresenceStudentDailyPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/payload/impl/PresenceStudentDailyPayloadImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/core/utils/MessageUtilsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/controller/PresenceStudentDailyLookupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/dto/AllLookupPresenceStudentDailyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/dto/LookupPresenceStudentDailyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/handler/PresenceStudentDailyEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/handler/PresenceStudentDailyQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/handler/impl/PresenceStudentDailyEventHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/handler/impl/PresenceStudentDailyQueryHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/repository/PresenceStudentDailyRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/repository/PresenceStudentDailyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/repository/impl/PresenceStudentDailyRepositoriesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/java/com/school/presence/student/daily/query/api/response/PresenceStudentDailyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student.daily/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/cmd/api/command/PresenceStudentDailyCreatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/PressApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/cmd/api/command/PressCreatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/cmd/api/command/PressUpdatedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/cmd/api/controller/CreatePressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/cmd/api/controller/UpdatePressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/common/LogCreated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/common/PressCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/common/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/dto/FieldsValidatorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/dto/MessageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/exception/GlobalWebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/exception/response/VerifyExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/model/Press.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/payload/PressPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/payload/impl/PressPayloadImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/core/utils/MessageUtilsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/controller/PressLookupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/dto/AllLookupPressResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/dto/LookupPressResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/handler/PressEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/handler/PressQueryHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/handler/impl/PressEventHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/handler/impl/PressQueryHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/repository/PressRepositories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/repository/PressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/repository/impl/PressRepositoriesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/school/press/query/api/response/PressResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/dto/LookupClassResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/response/ScheduleClassResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/handler/PresenceInClassQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/handler/PresenceInClassQueryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/handler/impl/PresenceInClassEventHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/handler/impl/PresenceInClassEventHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/handler/impl/PresenceInClassQueryHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/handler/impl/PresenceInClassQueryHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/repository/PresenceInClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../presence.student/src/main/java/com/school/presence/student/query/api/repository/PresenceInClassRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../presence.dormitory.student/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/PreApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/cmd/api/command/FindByCodeAndIndexQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/cmd/api/command/PresenceInClassCreatedCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/cmd/api/command/PresenceInClassUpdatedCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/cmd/api/command/PresenceQueryCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/cmd/api/controller/CreatePresenceInClassController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/cmd/api/controller/UpdatePresenceInClassController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/common/LogCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/common/PresenceInClassCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/common/PresenceSta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/common/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/config/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/config/OpenApiConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/dto/FieldsValidatorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/dto/MessageResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/exception/GlobalWebExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/exception/response/VerifyExceptionResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/model/PresenceInClass$PresenceInClassBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/model/PresenceInClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/payload/PresenceInClassPayload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/payload/impl/PresenceInClassPayloadImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/core/utils/MessageUtilsConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/controller/PresenceInClassLookupController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/dto/AllLookupPresenceInClassResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/dto/LookupEstablishmentSectionClassStudentResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/dto/LookupPresenceInClassResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/dto/LookupPresenceStaResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/dto/LookupScheduleIndexResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/handler/PresenceInClassEventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/handler/PresenceInClassQueryHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/handler/impl/PresenceInClassEventHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/handler/impl/PresenceInClassQueryHandlerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/handler/impl/PresenceInClassQueryHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/query/FindByCodeQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/query/FindByTrimesterQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/query/FindByYearQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/repository/PresenceInClassRepositories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/repository/PresenceInClassRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/repository/impl/PresenceInClassRepositoriesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/response/EstablishmentSectionClassStudentResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/response/PresenceInClassResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/response/PresenceQueryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/response/PresenceStuResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../presence.student/target/classes/com/school/presence/student/query/api/response/ScheduleIndexResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/cmd/api/command/ScheduleCreatedCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/cmd/api/command/ScheduleCreatedCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/core/config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/core/config/OpenApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/core/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/core/model/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/controller/SchedulesLookupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/controller/SchedulesLookupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/handler/ScheduleQueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/handler/ScheduleQueryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/handler/impl/ScheduleEventHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/handler/impl/ScheduleEventHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/handler/impl/ScheduleQueryHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/handler/impl/ScheduleQueryHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/repository/ScheduleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/repository/ScheduleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/response/ScheduleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/java/com/school/schedule/query/api/response/ScheduleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schedule/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../schedule/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ndagamiwe&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ndagamiwe/SchoolProject.git&quot;,
+    &quot;accountId&quot;: &quot;35086da1-a849-44d7-9395-3585940ef914&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2xnrsFMoVUeEyqayURf7z2rJVyB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BedApplication.executor": "Run",
+    "Application.ClassroomApplication.executor": "Run",
+    "Application.CourseApplication.executor": "Run",
+    "Application.PressApplication.executor": "Run",
+    "Application.SectionApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/eeeee",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/dev/flux/ssssss/new/sco/EducationSchool-feature-Education/press"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PressApplication">
+    <configuration name="BedApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.school.bed.BedApplication" />
+      <module name="press" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.school.press.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassroomApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.school.classroom.ClassroomApplication" />
+      <module name="press" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.school.press.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.school.course.CourseApplication" />
+      <module name="press" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.school.press.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PressApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.school.press.PressApplication" />
+      <module name="press" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.school.press.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SectionApplication" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/jdk-23.0.1-oracle-x64" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.school.section.SectionApplication" />
+      <module name="press" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <module name="press" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.SectionApplication" />
+      <item itemvalue="Application.PressApplication" />
+      <item itemvalue="Application.BedApplication" />
+      <item itemvalue="Application.CourseApplication" />
+      <item itemvalue="Application.ClassroomApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PressApplication" />
+        <item itemvalue="Application.BedApplication" />
+        <item itemvalue="Application.CourseApplication" />
+        <item itemvalue="Application.ClassroomApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="495d1959-023c-4414-b78b-6bf173c7b98f" name="Changes" comment="" />
+      <created>1748584883839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748584883839</updated>
+    </task>
+    <task id="LOCAL-00001" summary="course correction">
+      <option name="closed" value="true" />
+      <created>1748619278916</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748619278916</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="course correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="course correction" />
+  </component>
+</project>
