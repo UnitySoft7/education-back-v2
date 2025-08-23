@@ -18,11 +18,11 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI openAPI() {
         var devServer = new Server();
-        devServer.setUrl("http://127.0.0.1:9914");
+        devServer.setUrl("http://127.0.0.1:9918");
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://192.168.80.252:9914");
+        prodServer.setUrl("http://192.168.80.252:9918");
         prodServer.setDescription("Server URL production environment");
 
         var prodServer2 = new Server();

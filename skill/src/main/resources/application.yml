@@ -1,10 +1,10 @@
 server:
-  port: 9915
+  port: 9920
 
 spring:
   application:
     name: skill
   data:
     mongodb:
-      uri: mongodb://localhost:27017/EDUCATION
-#      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22
+#      uri: mongodb://localhost:27017/EDUCATION
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22

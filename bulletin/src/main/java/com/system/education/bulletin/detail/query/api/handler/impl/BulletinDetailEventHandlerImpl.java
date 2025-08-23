@@ -21,39 +21,37 @@ public class BulletinDetailEventHandlerImpl implements BulletinDetailEventHandle
 
     @Override
     public Mono<BulletinDetail> create(BulletinDetailCreatedCommand command) {
-        return bulletinRepository.findByBulletinCode(command.bulletinCode())
-                .flatMap(bulletin -> {
-                    double average = command.midTermAssessment() != null && command.examination() != null
-                            ? Math.round((Double.parseDouble(command.midTermAssessment()) + Double.parseDouble(command.examination())) / 2 * 100.0) / 100.0
-                            : 0;
-                    String grade = getString(average);
 
-                    BulletinDetail bulletinDetail = BulletinDetail.builder()
-                            .bulletinDetailId(UUID.randomUUID().toString())
-                            .studentCode(command.studentCode())
-                            .studentName(command.studentName())
-                            .courseCode(command.courseCode())
-                            .courseName(command.courseName())
-                            .midTermAssessment(command.midTermAssessment())
-                            .examination(command.examination())
-                            .average("" + average)
-                            .grade(grade)
-                            .teacherComment(command.teacherComment())
-                            .teacherCode(command.teacherCode())
-                            .teacherName(command.teacherName())
-                            .semester(command.semester())
-                            .schoolYear(command.schoolYear())
-                            .classCode(command.classCode())
-                            .className(command.className())
-                            .establishmentCode(command.establishmentCode())
-                            .establishmentName(command.establishmentName())
-                            .logCreatedAt(LogCreated.At())
-                            .logCreatedMonth(LogCreated.Month())
-                            .logCreatedYear(LogCreated.Year())
-                            .logCreatedDate(LogCreated.Date())
-                            .build();
-                    return bulletinDetailRepository.save(bulletinDetail);
-                });
+        double average = command.midTermAssessment() != null && command.examination() != null
+                ? Math.round((Double.parseDouble(command.midTermAssessment()) + Double.parseDouble(command.examination())) / 2 * 100.0) / 100.0
+                : 0;
+        String grade = getString(average);
+
+        BulletinDetail bulletinDetail = BulletinDetail.builder()
+                .bulletinDetailId(UUID.randomUUID().toString())
+                .studentCode(command.studentCode())
+                .studentName(command.studentName())
+                .courseCode(command.courseCode())
+                .courseName(command.courseName())
+                .midTermAssessment(command.midTermAssessment())
+                .examination(command.examination())
+                .average("" + average)
+                .grade(grade)
+                .teacherComment(command.teacherComment())
+                .teacherCode(command.teacherCode())
+                .teacherName(command.teacherName())
+                .semester(command.semester())
+                .schoolYear(command.schoolYear())
+                .classCode(command.classCode())
+                .className(command.className())
+                .establishmentCode(command.establishmentCode())
+                .establishmentName(command.establishmentName())
+                .logCreatedAt(LogCreated.At())
+                .logCreatedMonth(LogCreated.Month())
+                .logCreatedYear(LogCreated.Year())
+                .logCreatedDate(LogCreated.Date())
+                .build();
+        return bulletinDetailRepository.save(bulletinDetail);
     }
 
     private String getString(double average) {

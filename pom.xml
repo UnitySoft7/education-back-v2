@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.system.education</groupId>
+	<artifactId>education</artifactId>
+	<version>1.0.0</version>
+	<name>education</name>
+	<packaging>pom</packaging>
+	<description>Education system</description>
+	<modules>
+		<module>web.api</module>
+		<module>auth</module>
+		<module>bed</module>
+		<module>bulletin</module>
+		<module>cafeteria</module>
+		<module>class.course</module>
+		<module>classroom</module>
+		<module>course</module>
+		<module>course.teacher</module>
+		<module>dormitory</module>
+		<module>dormitory.student.bed.press</module>
+		<module>establishment</module>
+		<module>evaluate</module>
+		<module>evaluation</module>
+		<module>exam</module>
+		<module>examination</module>
+		<module>infirmary</module>
+		<module>minos</module>
+		<module>parent</module>
+		<module>permission</module>
+		<module>press</module>
+		<module>schedule</module>
+		<module>section</module>
+		<module>skill</module>
+		<module>student</module>
+		<module>teacher</module>
+	</modules>
+</project>

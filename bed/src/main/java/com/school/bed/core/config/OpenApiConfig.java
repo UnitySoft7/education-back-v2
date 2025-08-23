@@ -16,11 +16,11 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI openAPI() {
         var devServer = new Server();
-        devServer.setUrl("http://127.0.0.1:9840");
+        devServer.setUrl("http://127.0.0.1:9925");
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://80.252:9840");
+        prodServer.setUrl("http://80.252:9925");
         prodServer.setDescription("Server URL production environment");
 
         var contact = new Contact();
