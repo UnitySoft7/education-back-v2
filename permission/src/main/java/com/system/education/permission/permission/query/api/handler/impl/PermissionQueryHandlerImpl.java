@@ -78,7 +78,7 @@ public class PermissionQueryHandlerImpl implements PermissionQueryHandler {
 
     @Override
     public Flux<PermissionResponse> getPermissionByPermissionTypeAndSemester(PermissionByCodeAndSemesterQuery query) {
-        return permissionRepository.findByPermissionTypeCodeAndSemesterAndSchoolYear(query.code(), query.semester(), query.schoolYear())
+        return permissionRepository.findByPermissionTypeAndSemesterAndSchoolYear(query.code(), query.semester(), query.schoolYear())
                 .flatMap(this::getPermissionResponse);
     }
 

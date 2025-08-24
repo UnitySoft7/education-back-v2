@@ -15,5 +15,7 @@ interface ClassroomQueryHandler {
 
     Flux<ClassroomResponse> findByEstablishmentCode(String establishmentCode);
 
+    Flux<ClassroomResponse> findBySectionCode(String sectionCode);
+
     ClassroomResponse getClassroom (Classroom classroom);
 }

@@ -14,7 +14,7 @@
 	<name>teacher</name>
 	<description>Teacher service for Education system</description>
 	<properties>
-		<java.version>23</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -16,11 +16,15 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI openAPI() {
         var devServer = new Server();
-        devServer.setUrl("http://127.0.0.1:9810");
+        devServer.setUrl("http://127.0.0.1:9919");
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://192.168.80.252:9810");
+        prodServer.setUrl("http://10.201.183.71:9919");
+        prodServer.setDescription("Server URL production environment");
+
+        var prodServer2 = new Server();
+        prodServer.setUrl("https://schedule-ocga.onrender.com");
         prodServer.setDescription("Server URL production environment");
 
         var contact = new Contact();
@@ -41,7 +45,7 @@ public class OpenApiConfig {
                 .license(license);
 
         return new OpenAPI().info(info)
-                .servers(List.of(devServer, prodServer))
+                .servers(List.of(devServer, prodServer, prodServer2))
                 .addSecurityItem(new SecurityRequirement().addList("Token"))
                 .components(new Components()
                         .addSecuritySchemes("Token", new SecurityScheme()

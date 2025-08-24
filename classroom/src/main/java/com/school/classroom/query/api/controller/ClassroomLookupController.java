@@ -56,5 +56,18 @@ public class ClassroomLookupController {
                 ));
     }
 
+    @Operation(summary = "Retrieve data Classroom by sectionCode")
+    @GetMapping(path = "get-classroom-by-section-code/{sectionCode}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Mono<ResponseEntity<AllLookupClassroomResponse>> getClassroomBySectionCode(@PathVariable("sectionCode") String sectionCode) {
+        return ClassroomQueryHandler.findBySectionCode(sectionCode)
+                .collectList()
+                .map(classroom ->
+                        ResponseEntity.ok(new AllLookupClassroomResponse(true, classroom)))
+                .switchIfEmpty(Mono.just(
+                        ResponseEntity.status(HttpStatus.NOT_FOUND)
+                                .body(new AllLookupClassroomResponse(false, List.of()))
+                ));
+    }
+
 
 }

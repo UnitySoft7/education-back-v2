@@ -37,6 +37,12 @@ public class ClassroomQueryHandlerImpl implements ClassroomQueryHandler {
     }
     @Override
     public
+    Flux<ClassroomResponse> findBySectionCode(String sectionCode) {
+        return classroomRepository.findBySectionCode (sectionCode)
+                .map(this::getClassroom);
+    }
+    @Override
+    public
     ClassroomResponse getClassroom(Classroom classroom) {
         return new ClassroomResponse(
                 classroom.getClassroomId (),

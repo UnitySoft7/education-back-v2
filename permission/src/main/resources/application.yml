@@ -6,6 +6,6 @@ spring:
     name: permission
   data:
     mongodb:
-      uri: mongodb://localhost:27017/Education_permission
-#      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22
+#      uri: mongodb://localhost:27017/Education_permission
+      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22
 

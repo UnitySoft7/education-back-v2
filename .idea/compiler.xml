@@ -3,14 +3,94 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for dormitory.student.bed.press" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="web.api" />
+      </profile>
+      <profile name="Annotation profile for presence.dormitory.daily" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="presence.dormitory.daily" />
+      </profile>
+      <profile name="Annotation profile for education" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
+        <module name="bed" />
+        <module name="parent" />
+        <module name="auth" />
+        <module name="student" />
+        <module name="dormitory" />
+        <module name="minos" />
+        <module name="section" />
+        <module name="cafeteria" />
+        <module name="course.teacher" />
+        <module name="evaluation" />
+        <module name="infirmary" />
+        <module name="teacher" />
+        <module name="examination" />
+        <module name="skill" />
+        <module name="class.course" />
+        <module name="course" />
+        <module name="press" />
+        <module name="classroom" />
+        <module name="establishment" />
+        <module name="permission" />
+        <module name="exam" />
+        <module name="schedule" />
         <module name="dormitory.student.bed.press" />
+        <module name="evaluate" />
+        <module name="bulletin" />
+      </profile>
+      <profile name="Annotation profile for presence.dormitory.student" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="presence.dormitory.student" />
+      </profile>
+      <profile name="Annotation profile for presence.student" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="presence.student" />
+      </profile>
+      <profile name="Annotation profile for presence.student.daily" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="presence.student.daily" />
+      </profile>
+      <profile name="Annotation profile for presence.teacher" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="presence.teacher" />
       </profile>
     </annotationProcessing>
   </component>
@@ -35,6 +115,11 @@
       <module name="minos" options="-parameters" />
       <module name="parent" options="-parameters" />
       <module name="permission" options="-parameters" />
+      <module name="presence.dormitory.daily" options="-parameters" />
+      <module name="presence.dormitory.student" options="-parameters" />
+      <module name="presence.student" options="-parameters" />
+      <module name="presence.student.daily" options="-parameters" />
+      <module name="presence.teacher" options="-parameters" />
       <module name="press" options="-parameters" />
       <module name="schedule" options="-parameters" />
       <module name="section" options="-parameters" />

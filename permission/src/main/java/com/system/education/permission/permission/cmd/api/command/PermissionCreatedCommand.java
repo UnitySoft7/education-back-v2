@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Schema(name = "Permission created command")
 public record PermissionCreatedCommand(
         @NotNull(message = "The field is required")
-        @Pattern(regexp = "^[A-Z0-9]{12,}$", message = "Invalid code")
+        @Pattern(regexp = "^[A-Z0-9]{5,}$", message = "Invalid code")
         String permissionType,
         @NotNull(message = "The field is required")
         @Pattern(regexp = "^[A-Z0-9]{12,}$", message = "Invalid code")

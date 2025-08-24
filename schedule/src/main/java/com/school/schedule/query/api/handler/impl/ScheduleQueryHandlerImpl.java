@@ -33,7 +33,7 @@ public class ScheduleQueryHandlerImpl implements ScheduleQueryHandler {
     private ScheduleResponse getSchedule(Schedule schedule) {
         return new ScheduleResponse(
                 schedule.getScheduleId(), schedule.getCode(),
-
+                schedule.getIndex(),
                 schedule.getEstablishmentName(),
                 schedule.getEstablishmentCode(),
                 schedule.getSectionName(),
@@ -278,7 +278,7 @@ public class ScheduleQueryHandlerImpl implements ScheduleQueryHandler {
 //    @Override
 //    public Mono<AllLookupSectionResponse> getSections() throws Exception {
 //        WebClient webClient = WebClient.create();
-//        return webClient.get().uri("http://127.0.0.1:9825/api/v1/education/section/lookup-section/get-sections").retrieve().bodyToMono(AllLookupSectionResponse.class);
+//        return webClient.get().uri("http://127.0.0.1:9927/api/v1/education/section/lookup-section/get-sections").retrieve().bodyToMono(AllLookupSectionResponse.class);
 //    }
 //}
 

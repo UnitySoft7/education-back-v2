@@ -1,4 +1,5 @@
 package com.school.dormitory.student.bed.press.core.config;
+
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
+
 @Configuration
 public class OpenApiConfig {
     @Bean
@@ -20,7 +22,11 @@ public class OpenApiConfig {
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://192.168.80.252:9924");
+        prodServer.setUrl("http://10.201.183.71:9924");
+        prodServer.setDescription("Server URL production environment");
+
+        var prodServer2 = new Server();
+        prodServer.setUrl("https://assignemt-student-in-dormitory.onrender.com");
         prodServer.setDescription("Server URL production environment");
 
         var contact = new Contact();
@@ -41,7 +47,7 @@ public class OpenApiConfig {
                 .license(license);
 
         return new OpenAPI().info(info)
-                .servers(List.of(devServer, prodServer))
+                .servers(List.of(devServer, prodServer, prodServer2))
                 .addSecurityItem(new SecurityRequirement().addList("Token"))
                 .components(new Components()
                         .addSecuritySchemes("Token", new SecurityScheme()

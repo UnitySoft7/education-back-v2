@@ -1,5 +1,5 @@
 server:
-  port: 9810
+  port: 9919
 spring:
   application:
     name: schedule

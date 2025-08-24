@@ -67,10 +67,111 @@ public class RoleQueryHandlerImpl implements RoleQueryHandler {
         permissions.add(new NameResponse(Permissions.user_update));
         permissions.add(new NameResponse(Permissions.user_enable));
         permissions.add(new NameResponse(Permissions.user_disable));
+
         permissions.add(new NameResponse(Permissions.role_view));
         permissions.add(new NameResponse(Permissions.role_create));
         permissions.add(new NameResponse(Permissions.role_update));
+
         permissions.add(new NameResponse(Permissions.all));
+
+        permissions.add(new NameResponse(Permissions.bed_create));
+        permissions.add(new NameResponse(Permissions.bed_update));
+        permissions.add(new NameResponse(Permissions.bed_view));
+
+        permissions.add(new NameResponse(Permissions.bullitin_create));
+        permissions.add(new NameResponse(Permissions.bullitin_view));
+        permissions.add(new NameResponse(Permissions.bullitin_update));
+
+
+        permissions.add(new NameResponse(Permissions.cafetaria_create));
+
+        permissions.add(new NameResponse(Permissions.cafetaria_update));
+        permissions.add(new NameResponse(Permissions.cafetaria_view));
+
+
+        permissions.add(new NameResponse(Permissions.attri_course_class_create));
+        permissions.add(new NameResponse(Permissions.attri_course_class_view));
+        permissions.add(new NameResponse(Permissions.attri_course_class_update));
+
+
+        permissions.add(new NameResponse(Permissions.classroom_create));
+        permissions.add(new NameResponse(Permissions.classroom_update));
+        permissions.add(new NameResponse(Permissions.classroom_view));
+
+        permissions.add(new NameResponse(Permissions.course_create));
+        permissions.add(new NameResponse(Permissions.course_view));
+        permissions.add(new NameResponse(Permissions.course_update));
+
+        permissions.add(new NameResponse(Permissions.attri_dormitory_create));
+        permissions.add(new NameResponse(Permissions.attri_dormitory_update));
+        permissions.add(new NameResponse(Permissions.attri_dormitory_view));
+
+        permissions.add(new NameResponse(Permissions.dormitory_create));
+        permissions.add(new NameResponse(Permissions.dormitory_view));
+        permissions.add(new NameResponse(Permissions.dormitory_update));
+
+        permissions.add(new NameResponse(Permissions.dormitory_student_bed_press_create));
+        permissions.add(new NameResponse(Permissions.dormitory_student_bed_press_update));
+        permissions.add(new NameResponse(Permissions.dormitory_student_bed_press_view));
+
+        permissions.add(new NameResponse(Permissions.establishment_create));
+        permissions.add(new NameResponse(Permissions.establishment_disable));
+        permissions.add(new NameResponse(Permissions.establishment_enable));
+        permissions.add(new NameResponse(Permissions.establishment_view));
+        permissions.add(new NameResponse(Permissions.establishment_update));
+
+        permissions.add(new NameResponse(Permissions.evaluate_create));
+        permissions.add(new NameResponse(Permissions.evaluate_view));
+        permissions.add(new NameResponse(Permissions.evaluate_update));
+
+        permissions.add(new NameResponse(Permissions.exam_create));
+        permissions.add(new NameResponse(Permissions.exam_update));
+        permissions.add(new NameResponse(Permissions.exam_view));
+
+        permissions.add(new NameResponse(Permissions.examination_create));
+        permissions.add(new NameResponse(Permissions.examination_view));
+        permissions.add(new NameResponse(Permissions.examination_update));
+
+        permissions.add(new NameResponse(Permissions.infirmary_create));
+        permissions.add(new NameResponse(Permissions.infirmary_update));
+        permissions.add(new NameResponse(Permissions.infirmary_view));
+
+        permissions.add(new NameResponse(Permissions.minos_create));
+        permissions.add(new NameResponse(Permissions.minos_update));
+        permissions.add(new NameResponse(Permissions.minos_view));
+
+        permissions.add(new NameResponse(Permissions.parent_create));
+        permissions.add(new NameResponse(Permissions.parent_update));
+        permissions.add(new NameResponse(Permissions.parent_view));
+
+        permissions.add(new NameResponse(Permissions.permission_create));
+        permissions.add(new NameResponse(Permissions.permission_view));
+        permissions.add(new NameResponse(Permissions.permission_update));
+
+        permissions.add(new NameResponse(Permissions.press_create));
+        permissions.add(new NameResponse(Permissions.press_update));
+        permissions.add(new NameResponse(Permissions.press_view));
+
+        permissions.add(new NameResponse(Permissions.schedule_create));
+        permissions.add(new NameResponse(Permissions.schedule_update));
+        permissions.add(new NameResponse(Permissions.schedule_view));
+
+        permissions.add(new NameResponse(Permissions.section_create));
+        permissions.add(new NameResponse(Permissions.section_update));
+        permissions.add(new NameResponse(Permissions.section_view));
+
+        permissions.add(new NameResponse(Permissions.skill_create));
+        permissions.add(new NameResponse(Permissions.skill_update));
+        permissions.add(new NameResponse(Permissions.skill_view));
+
+        permissions.add(new NameResponse(Permissions.student_create));
+        permissions.add(new NameResponse(Permissions.student_update));
+        permissions.add(new NameResponse(Permissions.student_view));
+
+        permissions.add(new NameResponse(Permissions.teacher_create));
+        permissions.add(new NameResponse(Permissions.teacher_update));
+        permissions.add(new NameResponse(Permissions.teacher_view));
+
         return Mono.just(permissions);
     }
 

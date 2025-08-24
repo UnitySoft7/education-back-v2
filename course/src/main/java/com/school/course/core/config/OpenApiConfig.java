@@ -22,11 +22,11 @@ public class OpenApiConfig {
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://80.252:9905");
+        prodServer.setUrl("http://10.201.183.71:9905");
         prodServer.setDescription("Server URL production environment");
 
         var prodServer2 = new Server();
-        prodServer2.setUrl("https://course-4tm1.onrender.com");
+        prodServer2.setUrl("https://course-yqyh.onrender.com");
         prodServer2.setDescription("Server URL production environment");
 
         var contact = new Contact();

@@ -36,5 +36,10 @@
 		<module>skill</module>
 		<module>student</module>
 		<module>teacher</module>
+		<module>presence.dormitory.student</module>
+		<module>presence.dormitory.daily</module>
+		<module>presence.student</module>
+		<module>presence.student.daily</module>
+		<module>presence.teacher</module>
 	</modules>
 </project>

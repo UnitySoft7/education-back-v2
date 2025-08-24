@@ -8,6 +8,7 @@ import java.io.Serializable;
 public record ScheduleResponse(
         String scheduleId,
         String code,
+        String index,
         String establishmentName,
         String establishmentCode,
         String sectionName,

@@ -24,7 +24,7 @@ public class OpenApiConfig {
         prodServer.setDescription("Server URL production environment");
 
         var prodServer2 = new Server();
-        prodServer2.setUrl("https://minos-gg7w.onrender.com");
+        prodServer2.setUrl("https://minos-65su.onrender.com");
         prodServer2.setDescription("Server URL production environment");
 
         var contact = new Contact();

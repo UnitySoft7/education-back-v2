@@ -20,7 +20,11 @@ public class OpenApiConfig {
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://80.252:9923");
+        prodServer.setUrl("http://10.201.183.71:9923");
+        prodServer.setDescription("Server URL production environment");
+
+        var prodServer2 = new Server();
+        prodServer.setUrl("https://dormitory-ea1p.onrender.com");
         prodServer.setDescription("Server URL production environment");
 
         var contact = new Contact();
@@ -41,7 +45,7 @@ public class OpenApiConfig {
                 .license(license);
 
         return new OpenAPI().info(info)
-                .servers(List.of(devServer, prodServer))
+                .servers(List.of(devServer, prodServer, prodServer2))
                 .addSecurityItem(new SecurityRequirement().addList("Token"))
                 .components(new Components()
                         .addSecuritySchemes("Token", new SecurityScheme()

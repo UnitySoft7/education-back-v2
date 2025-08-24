@@ -14,4 +14,5 @@ public interface ClassroomRepository extends ReactiveMongoRepository<Classroom, 
     Mono<Classroom> findClassroomByName( @Param("name") String name);
     Mono<Boolean> existsClassroomByName( @Param("name") String name);
     Flux<Classroom> findByEstablishmentCode(@Param("establishmentCode") String establishmentCode);
+    Flux<Classroom> findBySectionCode(@Param("sectionCode") String sectionCode);
 }

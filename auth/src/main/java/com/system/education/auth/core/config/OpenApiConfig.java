@@ -23,11 +23,11 @@ public class OpenApiConfig {
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://80.252:9901");
+        prodServer.setUrl("http://10.201.183.71:9901");
         prodServer.setDescription("Server URL production environment");
 
         var prodServer2 = new Server();
-        prodServer2.setUrl("https://cafeteria-ec4k.onrender.com");
+        prodServer2.setUrl("https://auth-jeve.onrender.com");
         prodServer2.setDescription("Server URL production environment");
 
         var contact = new Contact();
