@@ -1,9 +1,0 @@
-server:
-  port: 9904
-
-spring:
-  application:
-    name: classroom
-  data:
-    mongodb:
-      uri: mongodb+srv://niyobethel:GCSsTx0qpEWjvW4z@bethel22.ycywdha.mongodb.net/EDUCATION?retryWrites=true&w=majority&appName=Bethel22

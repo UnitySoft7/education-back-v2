@@ -1,4 +1,5 @@
 package com.school.presence.teacher.core.payload.impl;
+import com.school.presence.teacher.core.common.LogCreated;
 import com.school.presence.teacher.core.common.PresenceTeacherCode;
 import com.school.presence.teacher.core.payload.PresenceTeacherPayload;
 import com.school.presence.teacher.query.api.repository.PresenceTeacherRepositories;
@@ -22,5 +23,8 @@ public class PresenceTeacherPayloadImpl implements PresenceTeacherPayload {
         });
     }
 
-
+    @Override
+    public Mono<Boolean> exitPresence(String prof) {
+        return presenceTeacherRepository.existsByProfAndLogCreatedAt(prof, LogCreated.At());
+    }
 }

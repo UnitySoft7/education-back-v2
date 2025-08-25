@@ -9,4 +9,5 @@ import reactor.core.publisher.Mono;
 @Repository
 public interface PresenceTeacherRepository extends ReactiveMongoRepository<PresenceTeacher, String> {
     Mono<PresenceTeacher> findPresenceTeacherByCode(@Param("code") String code);
+    Mono<Boolean> existsByProfAndLogCreatedAt(@Param("prof") String prof, @Param("logCreatedAt") String logCreatedAt);
 }

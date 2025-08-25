@@ -21,197 +21,197 @@ spring:
       routes:
 
 
-#        #        -------------------AUTHENTIFICATION -------------------
-#        - id: web-api-v1-education-auth
-#          uri: https://auth-jeve.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/auth/**
-#
-#        - id: web-api-v1-education-role
-#          uri: https://auth-jeve.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/role/**
-#
-#        - id: web-api-v1-education-user-account
-#          uri: https://auth-jeve.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/user-account/**
-#
-#        #        -------------------ESTABLISHMENT -------------------
-#        - id: web-api-v1-education-establishment
-#          uri: https://establishment-0d6i.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/establishment/**
-#
-#        #        -------------------SECTION -------------------
-#        - id: web-api-v1-education-section
-#          uri: https://section-aw2d.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/section/**
-#
-#        #        -------------------CLASSROOM -------------------
-#        - id: web-api-v1-education-classroom
-#          uri: https://classroom-ja0z.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/classroom/**
-#
-#
-#        #        -------------------COURSE -------------------
-#        - id: web-api-v1-education-course
-#          uri: https://course-yqyh.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/course/**
-#
-#        #        -------------------CLASS-COURSE -------------------
-#        - id: web-api-v1-education-class-course
-#          uri: https://classcourse.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/class-course/**
-#
-#
-#        #        -------------------TEACHER -------------------
-#        - id: web-api-v1-education-teacher
-#          uri: https://teacher-ony6.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/teacher/**
-#
-#        #        -------------------CLASS-COURSE-TEACHER -------------------
-#        - id: web-api-v1-education-course-teacher
-#          uri: https://courseteacher.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/course-teacher/**
-#
-#        #        -------------------PARENT -------------------
-#        - id: web-api-v1-education-parent
-#          uri: https://parent-nvc3.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/parent/**
-#
-#        #        -------------------STUDENT -------------------
-#        - id: web-api-v1-education-student
-#          uri: https://student-67a8.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/student/**
-#
-#        #        -------------------EVALUATION -------------------
-#        - id: web-api-v1-education-evaluation
-#          uri: https://evaluation-sxt1.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/evaluation/**
-#
-#        #        -------------------EVALUATE -------------------
-#        - id: web-api-v1-education-evaluate
-#          uri: https://evaluate-4d76.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/evaluate/**
-#
-#        #        -------------------EXAM -------------------
-#        - id: web-api-v1-education-exam
-#          uri: https://exam-khve.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/exam/**
-#
-#        #        -------------------EXAMINATION -------------------
-#        - id: web-api-v1-education-examination
-#          uri: https://examination-et7w.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/examination/**
-#
-#        #        -------------------Cafeteria -------------------
-#        - id: web-api-v1-education-cafeteria
-#          uri: https://cafeteria-r83y.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/cafeteria/**
-#
-#        #        -------------------Infirmary -------------------
-#        - id: web-api-v1-education-infirmary
-#          uri: https://infirmary-r0kt.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/infirmary/**
-#
-#        #        -------------------MINOS -------------------
-#        - id: web-api-v1-education-minos
-#          uri: https://minos-65su.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/minos/**
-#
-#        #        -------------------PERMISSION -------------------
-#        - id: web-api-v1-education-permission
-#          uri: https://permission-qg05.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/permission/**
-#
-#        #        -------------------SCHEDULE -------------------
-#        - id: web-api-v1-education-schedule
-#          uri: https://schedule-ocga.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/schedule/**
-#
-#        #        -------------------SKILL -------------------
-#        - id: web-api-v1-education-skill
-#          uri: https://skill-y65x.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/skill/**
-#
-#        #        -------------------BULLETIN -------------------
-#        - id: web-api-v1-education-bulletin
-#          uri: https://bulletin-f1wt.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/bulletin/**
-#
-#        #        -------------------Press -------------------
-#        - id: web-api-v1-education-press
-#          uri: https://press-we9l.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/press/**
-#
-#        #        -------------------Dormitory -------------------
-#        - id: web-api-v1-education-dormitory
-#          uri: https://dormitory-ea1p.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/dormitory/**
-#
-#        #        -------------------Dormitory-student-bd-press -------------------
-#        - id: web-api-v1-education-dormitory-student-bed-press
-#          uri: https://assignemt-student-in-dormitory.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/dormitory-student-bed-press/**
-#
-#        #        -------------------BED -------------------
-#        - id: web-api-v1-education-bed
-#          uri: https://bed-vdfi.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/bed/**
-#
-#        #        -------------------PRESENCE TEACHER -------------------
-#        - id: web-api-v1-education-presence-teacher
-#          uri: https://presence-teacher.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/presence-teacher/**
-#
-#        #        -------------------PRESENCE STUDENT -------------------
-#        - id: web-api-v1-education-presence-student
-#          uri: https://presence-student.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/presence-student/**
-#
-#        #        -------------------PRESENCE STUDENT DAILY -------------------
-#        - id: web-api-v1-education-presence-student-daily
-#          uri: https://presence-student-daily.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/presence-student-daily/**
-#
-#        #        -------------------PRESENCE DORMITORY STUDENT -------------------
-#        - id: web-api-v1-education-presence-dormitory-student
-#          uri: https://presence-dormitory-student.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/presence-dormitory-student/**
-#
-#        #        -------------------PRESENCE DORMITORY DAILY -------------------
-#        - id: web-api-v1-education-dormitory-student-daily
-#          uri: https://dormitory-daily.onrender.com/**
-#          predicates:
-#            - Path=/api/v1/education/dormitory-student-daily/**
+        #        -------------------AUTHENTIFICATION -------------------
+        - id: web-api-v1-education-auth
+          uri: https://auth-jeve.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/auth/**
+
+        - id: web-api-v1-education-role
+          uri: https://auth-jeve.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/role/**
+
+        - id: web-api-v1-education-user-account
+          uri: https://auth-jeve.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/user-account/**
+
+        #        -------------------ESTABLISHMENT -------------------
+        - id: web-api-v1-education-establishment
+          uri: https://establishment-0d6i.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/establishment/**
+
+        #        -------------------SECTION -------------------
+        - id: web-api-v1-education-section
+          uri: https://section-aw2d.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/section/**
+
+        #        -------------------CLASSROOM -------------------
+        - id: web-api-v1-education-classroom
+          uri: https://classroom-ja0z.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/classroom/**
+
+
+        #        -------------------COURSE -------------------
+        - id: web-api-v1-education-course
+          uri: https://course-yqyh.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/course/**
+
+        #        -------------------CLASS-COURSE -------------------
+        - id: web-api-v1-education-class-course
+          uri: https://classcourse.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/class-course/**
+
+
+        #        -------------------TEACHER -------------------
+        - id: web-api-v1-education-teacher
+          uri: https://teacher-ony6.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/teacher/**
+
+        #        -------------------CLASS-COURSE-TEACHER -------------------
+        - id: web-api-v1-education-course-teacher
+          uri: https://courseteacher.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/course-teacher/**
+
+        #        -------------------PARENT -------------------
+        - id: web-api-v1-education-parent
+          uri: https://parent-nvc3.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/parent/**
+
+        #        -------------------STUDENT -------------------
+        - id: web-api-v1-education-student
+          uri: https://student-67a8.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/student/**
+
+        #        -------------------EVALUATION -------------------
+        - id: web-api-v1-education-evaluation
+          uri: https://evaluation-sxt1.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/evaluation/**
+
+        #        -------------------EVALUATE -------------------
+        - id: web-api-v1-education-evaluate
+          uri: https://evaluate-4d76.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/evaluate/**
+
+        #        -------------------EXAM -------------------
+        - id: web-api-v1-education-exam
+          uri: https://exam-khve.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/exam/**
+
+        #        -------------------EXAMINATION -------------------
+        - id: web-api-v1-education-examination
+          uri: https://examination-et7w.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/examination/**
+
+        #        -------------------Cafeteria -------------------
+        - id: web-api-v1-education-cafeteria
+          uri: https://cafeteria-r83y.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/cafeteria/**
+
+        #        -------------------Infirmary -------------------
+        - id: web-api-v1-education-infirmary
+          uri: https://infirmary-r0kt.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/infirmary/**
+
+        #        -------------------MINOS -------------------
+        - id: web-api-v1-education-minos
+          uri: https://minos-65su.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/minos/**
+
+        #        -------------------PERMISSION -------------------
+        - id: web-api-v1-education-permission
+          uri: https://permission-qg05.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/permission/**
+
+        #        -------------------SCHEDULE -------------------
+        - id: web-api-v1-education-schedule
+          uri: https://schedule-ocga.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/schedule/**
+
+        #        -------------------SKILL -------------------
+        - id: web-api-v1-education-skill
+          uri: https://skill-y65x.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/skill/**
+
+        #        -------------------BULLETIN -------------------
+        - id: web-api-v1-education-bulletin
+          uri: https://bulletin-f1wt.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/bulletin/**
+
+        #        -------------------Press -------------------
+        - id: web-api-v1-education-press
+          uri: https://press-we9l.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/press/**
+
+        #        -------------------Dormitory -------------------
+        - id: web-api-v1-education-dormitory
+          uri: https://dormitory-ea1p.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/dormitory/**
+
+        #        -------------------Dormitory-student-bd-press -------------------
+        - id: web-api-v1-education-dormitory-student-bed-press
+          uri: https://assignemt-student-in-dormitory.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/dormitory-student-bed-press/**
+
+        #        -------------------BED -------------------
+        - id: web-api-v1-education-bed
+          uri: https://bed-vdfi.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/bed/**
+
+        #        -------------------PRESENCE TEACHER -------------------
+        - id: web-api-v1-education-presence-teacher
+          uri: https://presence-teacher.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/presence-teacher/**
+
+        #        -------------------PRESENCE STUDENT -------------------
+        - id: web-api-v1-education-presence-student
+          uri: https://presence-student.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/presence-student/**
+
+        #        -------------------PRESENCE STUDENT DAILY -------------------
+        - id: web-api-v1-education-presence-student-daily
+          uri: https://presence-student-daily.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/presence-student-daily/**
+
+        #        -------------------PRESENCE DORMITORY STUDENT -------------------
+        - id: web-api-v1-education-presence-dormitory-student
+          uri: https://presence-dormitory-student.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/presence-dormitory-student/**
+
+        #        -------------------PRESENCE DORMITORY DAILY -------------------
+        - id: web-api-v1-education-dormitory-student-daily
+          uri: https://dormitory-daily.onrender.com/**
+          predicates:
+            - Path=/api/v1/education/dormitory-student-daily/**
 
 #
         #        -------------------AUTHENTIFICATION -------------------

@@ -5,4 +5,5 @@ import reactor.core.publisher.Mono;
 public interface PresenceTeacherPayload {
     Mono<String> getCode();
 
+    Mono<Boolean> exitPresence(String prof);
 }

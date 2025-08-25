@@ -80,7 +80,7 @@ public class MinosEventHandlerImpl implements MinosEventHandler {
                                                         .transaId(UUID.randomUUID().toString())
                                                         .transaCode(code)
                                                         .minosCode(minos.getMinosCode())
-                                                        .ESCS(command.ESCS())
+                                                        .studentCode(command.ESCS())
                                                         .establishmentCode(minos.getEstablishmentCode())
                                                         .establishmentName(minos.getEstablishmentName())
                                                         .amount(totalAfterPayment)  // This payment amount

@@ -28,13 +28,18 @@ public class CreatePresenceTeacherController {
     @Operation(summary = "Create PresenceTeacher")
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public Mono<ResponseEntity<MessageResponse>> create(@Valid @RequestBody PresenceTeacherCreatedCommand command) {
-        Mono<PresenceTeacher> courseMono = presenceTeacherEventHandler.create(command);
-        return courseMono.flatMap(create -> {
-            if (create != null) {
-                return Mono.just(ResponseEntity.ok().body(new MessageResponse(true, MessageUtilsConstants.created)));
-            }
-            return Mono.just(ResponseEntity.ok().body(new MessageResponse(false, MessageUtilsConstants.operation_failed)));
-        });
+        return presenceTeacherPayload.exitPresence(command.prof())
+                .flatMap(exists -> {
+                    if (exists) {
+                        return Mono.just(ResponseEntity.ok().body(new MessageResponse(false, MessageUtilsConstants.already_exists)));
+                    } else {
+                        return presenceTeacherEventHandler.create(command).flatMap(create -> {
+                            if (create != null) {
+                                return Mono.just(ResponseEntity.ok().body(new MessageResponse(true, MessageUtilsConstants.created)));
+                            }
+                            return Mono.just(ResponseEntity.ok().body(new MessageResponse(false, MessageUtilsConstants.operation_failed)));
+                        });
+                    }});
     }
 }
 

@@ -5,6 +5,7 @@ public class MessageUtilsConstants {
     public static String code_not_found = "Le code est introuvable.";
     public static String catName_exist = "La catName existe déjà.";
     public static String Name_Exists = "Le nom existe déjà.";
+    public static String already_exists = "The teaching is already present.";
 
 
     public static String disable = "Bien désactivé.";
