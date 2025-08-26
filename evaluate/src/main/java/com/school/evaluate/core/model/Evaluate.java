@@ -30,9 +30,6 @@ public class Evaluate {
     private String studentFullname;
     private double noteMax;
     private double note;
-//    private String ESCC;
-//    private String ESCCT;
-//    private String ESCS;
     private String establishmentName;
     private String establishmentCode;
     private String sectionName;

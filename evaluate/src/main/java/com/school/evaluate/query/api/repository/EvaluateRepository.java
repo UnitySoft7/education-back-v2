@@ -19,10 +19,5 @@ public interface EvaluateRepository extends ReactiveMongoRepository<Evaluate, St
     Flux<Evaluate> sumNotesByEscs(@Param("studentCode") String studentCode);
     Mono<Evaluate> findEvaluateByStudentCodeAndCourseCodeAndTrimesterAndSchoolYear(@Param("student") String student, @Param("course") String course, @Param("trimester") String trimester, @Param("year") String year );
     Flux<Evaluate> findAllEvaluateByEstablishmentCodeAndClassroomCodeAndSectionCodeAndProfCodeAndCourseCodeAndTrimesterAndSchoolYear(@Param("establishment") String establishment, @Param("classroom") String classroom, @Param("section") String section, @Param("prof") String prof, @Param("course") String course, @Param("trimester") String trimester, @Param("year") String year);
-    Mono<Boolean> existsByEvaluationCodeAndStudent ( @Param("evaluationCode") String evaluationCode, @Param("studentCode") String studentCode);
+    Mono<Boolean> existsByEvaluationCodeAndStudentCode(@Param("evaluationCode") String evaluationCode, @Param("studentCode") String studentCode);
 }
-
-//    Flux<Evaluate> findEvaluateByESCC ( @Param("ESCC") String ESCC);
-//    Flux<Evaluate> findEvaluateByESCCT ( @Param("ESCCT") String ESCCT);
-//    @Query("SELECT e.studentCode AS escs, SUM(e.note) AS totalNotes " + "FROM evaluate e " + "WHERE e.studentCode = :studentCode " + "GROUP BY e.studentCode")
-//    Mono<Evaluate> sumNotesByEscs(@Param("studentCode") String studentCode);

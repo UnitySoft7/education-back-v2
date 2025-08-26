@@ -67,6 +67,6 @@ public class EvaluatePayloadImpl implements EvaluatePayload {
 
     @Override
     public Mono<Boolean> verifyEvaluate(String evaluationCode, String studentCode) {
-        return conduiteRepository.existsByEvaluationCodeAndStudent(evaluationCode, studentCode);
+        return conduiteRepository.existsByEvaluationCodeAndStudentCode(evaluationCode, studentCode);
     }
 }
