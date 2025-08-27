@@ -1,10 +1,11 @@
 package com.school.minos.tariff.cmd.api.controller;
 
-import com.school.minos.cmd.api.command.MinosCreatedCommand;
 import com.school.minos.core.dto.MessageResponse;
-import com.school.minos.core.model.Minos;
+import com.school.minos.minos.core.model.Minos;
 import com.school.minos.core.utils.MessageUtilsConstants;
-import com.school.minos.query.api.handler.MinosEventHandler;
+import com.school.minos.tariff.cmd.api.command.TariffCreatedCommand;
+import com.school.minos.tariff.core.model.Tariff;
+import com.school.minos.tariff.query.api.handler.TariffEventHandler;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -22,14 +23,13 @@ import reactor.core.publisher.Mono;
 @RequestMapping(path = "/api/v1/education/minos/create-tariff")
 @Tag(name = "Tariff", description = "Data rest API for tariff resource")
 public class CreateTariffController {
-    private final MinosEventHandler tariffEventHandler;
+    private final TariffEventHandler tariffEventHandler;
 
     @Operation(summary = "Create tariff")
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public Mono<ResponseEntity<MessageResponse>> create(@Valid @RequestBody MinosCreatedCommand command) {
+    public Mono<ResponseEntity<MessageResponse>> create(@Valid @RequestBody TariffCreatedCommand command) {
 
-        Mono<Minos> disableMono = tariffEventHandler.create(command);
-        return disableMono.flatMap(disable -> {
+        return tariffEventHandler.create(command).flatMap(disable -> {
             if (disable != null) {
                 return Mono.just(ResponseEntity.ok().body(new MessageResponse(true, MessageUtilsConstants.created)));
             }

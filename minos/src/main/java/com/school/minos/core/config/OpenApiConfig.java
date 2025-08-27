@@ -1,4 +1,5 @@
 package com.school.minos.core.config;
+
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -11,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
+
 @Configuration
 public class OpenApiConfig {
     @Bean
@@ -20,7 +22,7 @@ public class OpenApiConfig {
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://192.168.80.40:9917");
+        prodServer.setUrl("http://10.205.174.70:9917");
         prodServer.setDescription("Server URL production environment");
 
         var prodServer2 = new Server();

@@ -82,11 +82,24 @@ public class RoleQueryHandlerImpl implements RoleQueryHandler {
         permissions.add(new NameResponse(Permissions.bullitin_view));
         permissions.add(new NameResponse(Permissions.bullitin_update));
 
+        permissions.add(new NameResponse(Permissions.bullitin_detail_create));
+        permissions.add(new NameResponse(Permissions.bullitin_detail_view));
+        permissions.add(new NameResponse(Permissions.bullitin_detail_update));
+
 
         permissions.add(new NameResponse(Permissions.cafetaria_create));
-
         permissions.add(new NameResponse(Permissions.cafetaria_update));
         permissions.add(new NameResponse(Permissions.cafetaria_view));
+
+
+        permissions.add(new NameResponse(Permissions.cafetaria_product_create));
+        permissions.add(new NameResponse(Permissions.cafetaria_product_update));
+        permissions.add(new NameResponse(Permissions.cafetaria_product_view));
+
+
+        permissions.add(new NameResponse(Permissions.cafetaria_consumed_create));
+        permissions.add(new NameResponse(Permissions.cafetaria_consumed_update));
+        permissions.add(new NameResponse(Permissions.cafetaria_consumed_view));
 
 
         permissions.add(new NameResponse(Permissions.attri_course_class_create));

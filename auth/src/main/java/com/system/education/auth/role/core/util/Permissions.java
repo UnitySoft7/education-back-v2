@@ -13,7 +13,6 @@ public class Permissions {
     public static String role_update = "ROLE:UPDATE";
     public static String role_global = "ROLE:GLOBAL";
 
-
     public static String all = "ALL:ALL";
     public static String all_global = "ALL:GLOBAL";
 
@@ -41,7 +40,6 @@ public class Permissions {
     public static String cafetaria_consumed_create = "CAFETERIA_CONSUMED:CREATE";
     public static String cafetaria_consumed_update = "CAFETERIA_CONSUMED:UPDATE";
 
-
     public static String attri_course_class_view = "COURSECLASS:VIEW";
     public static String attri_course_class_create = "COURSECLASS:CREATE";
     public static String attri_course_class_update = "COURSECLASS:UPDATE";
@@ -61,7 +59,6 @@ public class Permissions {
     public static String dormitory_view = "DORMITORY:VIEW";
     public static String dormitory_create = "DORMITORY:CREATE";
     public static String dormitory_update = "DORMITORY:UPDATE";
-
 
     public static String dormitory_student_bed_press_view = "DORMITORYSTUDENTBEDPRESS:VIEW";
     public static String dormitory_student_bed_press_create = "DORMITORYSTUDENTBEDPRESS:CREATE";

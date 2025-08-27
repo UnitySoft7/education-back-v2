@@ -23,7 +23,7 @@ public class OpenApiConfig {
         devServer.setDescription("Server URL development environment");
 
         var prodServer = new Server();
-        prodServer.setUrl("http://10.201.183.71:9901");
+        prodServer.setUrl("http://10.205.174.70:9901");
         prodServer.setDescription("Server URL production environment");
 
         var prodServer2 = new Server();

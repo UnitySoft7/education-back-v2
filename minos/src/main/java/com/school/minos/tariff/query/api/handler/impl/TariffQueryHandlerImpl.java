@@ -31,7 +31,7 @@ public class TariffQueryHandlerImpl implements TariffQueryHandler {
 
     @Override
     public Mono<TariffResponse> findTariffByClassCode(String code) {
-        return minosRepository.findTariffByClassCode(code).map(this::getTariff);
+        return minosRepository.findTariffByClassroomCode(code).map(this::getTariff);
     }
 
     @Override

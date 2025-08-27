@@ -27,10 +27,8 @@ public record UserAccountCreatedRequest(
     @NotNull(message = "The field must not be null")
     @Pattern(regexp = "^[_a-zA-Z0-9-]{2,40}$", message = "Ne doit avoir que 36 caractères")
     String role,
-
     @NotNull(message = "The field is required")
     @Pattern(regexp = "^[\\p{L} '-]{2,}$", message = "The full name must have at least 2 characters")
-    String establishmentName,
-
+    String enterpriseName,
     @Pattern(regexp = "^[a-zA-Z0-9\\-]{2,50}$", message = "Doit être composé de 2 à 50 caractères alphanumériques ou tirets uniquement")
     String enterpriseCode) implements Serializable {}

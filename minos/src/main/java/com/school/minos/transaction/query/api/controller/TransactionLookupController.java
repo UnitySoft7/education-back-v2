@@ -1,7 +1,6 @@
 package com.school.minos.transaction.query.api.controller;
 
 import com.school.minos.transaction.query.api.dto.AllLookupTransactionResponse;
-import com.school.minos.transaction.query.api.dto.LookupTransactionResponse;
 import com.school.minos.transaction.query.api.handler.TransactionQueryHandler;
 import com.school.minos.transaction.query.api.query.TransactionByStudentQuery;
 import io.swagger.v3.oas.annotations.Operation;
@@ -27,15 +26,6 @@ public class TransactionLookupController {
                 .collectList()
                 .map(transaction ->
                         new AllLookupTransactionResponse(true, transaction))
-                .map(ResponseEntity::ok);
-    }
-
-    @Operation(summary = "Retrieve data transaction by transactionCode")
-    @GetMapping(path = "get-transaction-by-transaction-code/{transactionCode}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Mono<ResponseEntity<?>> getByReceiverCode(@PathVariable("transactionCode") String transactionCode) {
-        return transactionQueryHandler.findTransactionByCode(transactionCode)
-                .map(transaction ->
-                        new LookupTransactionResponse(true, transaction))
                 .map(ResponseEntity::ok);
     }
 

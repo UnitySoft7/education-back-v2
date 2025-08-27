@@ -31,7 +31,4 @@ public class Tariff {
     private String logCreatedDate;
     private String logCreatedMonth;
     private String logCreatedYear;
-
-
-
 }

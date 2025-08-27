@@ -11,6 +11,10 @@ import reactor.core.publisher.Mono;
 public interface TariffRepository extends ReactiveMongoRepository<Tariff, String> {
     Mono<Boolean> existsTariffByTariffCode(@Param("code") String code);
     Mono<Tariff> findTariffByTariffCode (@Param("code") String code);
-    Mono<Tariff> findTariffByClassCode (@Param("classCode") String classCode);
+    Mono<Tariff> findTariffByClassroomCode(@Param("classCode") String classCode);
     Flux<Tariff> findTariffByEstablishmentCode (@Param("establishmentCode") String establishmentCode);
+    Mono<Tariff> findTariffByEstablishmentCodeAndSectionCodeAndClassroomCode (
+            @Param("establishmentCode") String establishmentCode,
+            @Param("sectionCode") String sectionCode,
+            @Param("classroomCode") String classroomCode);
 }

@@ -8,7 +8,6 @@ import com.school.minos.transaction.query.api.response.TransactionResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
@@ -18,11 +17,6 @@ public class TransactionQueryHandlerImp implements TransactionQueryHandler {
     @Override
     public Flux<TransactionResponse> findTransactions() {
         return transactionRepository.findAll().map(this::getTransaction);
-    }
-
-    @Override
-    public Mono<TransactionResponse> findTransactionByCode(String code) {
-        return transactionRepository.findTransactionByTransaCode(code).map(this::getTransaction);
     }
 
     @Override
@@ -38,14 +32,14 @@ public class TransactionQueryHandlerImp implements TransactionQueryHandler {
 
     public TransactionResponse getTransaction(Transaction transaction) {
         return new TransactionResponse(transaction.getTransaId(),
-                transaction.getTransaCode(), transaction.getMinosCode(),
-                transaction.getStudentCode(), transaction.getStudentFullname(),
-                transaction.getTrimester(), transaction.getAmount(), transaction.getMaxamount(),
-                transaction.getStatus(), transaction.getSchoolYear(),
-                transaction.getEstablishmentName(), transaction.getEstablishmentCode(),
-                transaction.getSectionName(), transaction.getSectionCode(),
-                transaction.getClassroomName(), transaction.getClassroomCode(),
-                transaction.getLogCreatedAt(), transaction.getLogCreatedDate(),
-                transaction.getLogCreatedMonth(), transaction.getLogCreatedYear());
+                transaction.getMinosCode(), transaction.getStudentCode(),
+                transaction.getStudentFullname(), transaction.getTrimester(),
+                transaction.getAmount(), transaction.getMaxamount(),
+                transaction.getSchoolYear(), transaction.getEstablishmentName(),
+                transaction.getEstablishmentCode(), transaction.getSectionName(),
+                transaction.getSectionCode(), transaction.getClassroomName(),
+                transaction.getClassroomCode(), transaction.getLogCreatedAt(),
+                transaction.getLogCreatedDate(), transaction.getLogCreatedMonth(),
+                transaction.getLogCreatedYear());
     }
 }

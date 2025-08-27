@@ -44,6 +44,7 @@ public class WebSecurityConfig {
                         .pathMatchers("/api/v1/education/user-account/create-user-account").permitAll()
                         .pathMatchers("/api/v1/education/role/create-role").permitAll()
                         .pathMatchers("/api/v1/education/role/lookup-role/get-roles").permitAll()
+                        .pathMatchers("/api/v1/education/role/lookup-role/get-permissions").permitAll()
                         .pathMatchers("/api/v1/education/role/lookup-role/get-roles-not-global").permitAll()
                         .pathMatchers("/api/v1/education/role/lookup-role/get-roles-global").permitAll()
                         .pathMatchers("/api/v1/education/role/lookup-role/get-role-by-enterprise").permitAll()

@@ -7,8 +7,6 @@ import reactor.core.publisher.Mono;
 
 public interface TransactionQueryHandler {
     Flux<TransactionResponse> findTransactions();
-    Mono<TransactionResponse> findTransactionByCode(String code);
     Flux<TransactionResponse> findTransactionByStudent(String code);
-
     Flux<TransactionResponse> findTransactionByStudentAndSemester(TransactionByStudentQuery query);
 }

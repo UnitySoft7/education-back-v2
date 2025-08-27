@@ -1,4 +1,5 @@
 package com.school.evaluate.query.api.handler.impl;
+
 import com.school.evaluate.cmd.api.command.EvaluateCreatedCommand;
 import com.school.evaluate.cmd.api.command.EvaluateReclaimedCommand;
 import com.school.evaluate.cmd.api.command.EvaluateUpdatedCommand;
@@ -9,15 +10,17 @@ import com.school.evaluate.query.api.repository.EvaluateRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
+
 import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 public class EvaluateEventHandlerImpl implements EvaluateEventHandler {
     private final  EvaluateRepository evaluateRepository;
-    private final  EvaluatePayload  evaluatePayload;
+    private final EvaluatePayload evaluatePayload;
+
     @Override
-    public
-    Mono<Evaluate> create ( EvaluateCreatedCommand command ) {
+    public Mono<Evaluate> create ( EvaluateCreatedCommand command ) {
        return evaluatePayload.getCode().flatMap(code -> {
                         Evaluate value = Evaluate.builder()
                                 .evaluateId (UUID.randomUUID().toString())
@@ -33,9 +36,6 @@ public class EvaluateEventHandlerImpl implements EvaluateEventHandler {
                                 .studentFullname ( command.studentFullname () )
                                 .noteMax (Double.parseDouble(command.noteMax ()))
                                 .note(Double.parseDouble(command.note()))
-//                                .ESCC( command.ESCC () )
-//                                .ESCS(command.ESCCT())
-//                                .ESCCT(command.ESCCT())
                                 .establishmentCode ( command.establishmentCode () )
                                 .establishmentName ( command.establishmentName ( ) )
                                 .sectionName ( command.sectionName () )
