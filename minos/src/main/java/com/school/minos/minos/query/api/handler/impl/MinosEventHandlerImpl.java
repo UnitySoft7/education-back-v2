@@ -84,7 +84,7 @@ public class MinosEventHandlerImpl implements MinosEventHandler {
                                                 double overpaid = totalAfterPayment - maxAmount;
 
                                                 return Mono.error(new RuntimeException(
-                                                        "Tu depasses : " + overpaid + " FBU au minervale annuel. Tu as paye : "
+                                                        "Tu depasses : " + overpaid + " FBU au minervale semetriel. Tu as paye : "
                                                                 + 0 + " FBU " + "pour cette semestre, "+"et il te rester seulement "
                                                                 + maxAmount + " over: "+ overpaid+" max: "+maxAmount+" tot: "
                                                                 +totalAfterPayment+" Somme payee "+ 0
@@ -96,7 +96,7 @@ public class MinosEventHandlerImpl implements MinosEventHandler {
                                                     .studentCode(command.studentCode())
                                                     .studentFullname(command.studentName())
                                                     .semester(command.trimester())
-                                                    .amount(0)
+                                                    .amount(command.amount())
                                                     .maxamount(tariff.getAmount())
                                                     .status("")
                                                     .schoolYear(command.schoolYear())
